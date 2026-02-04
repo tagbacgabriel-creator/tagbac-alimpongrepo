@@ -1,3 +1,4 @@
+/* --- Existing Styles (unchanged) --- */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -127,4 +128,85 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem 0;
+}
+
+/* CHANGES*/
+
+header {
+  background: linear-gradient(135deg, #333, #555);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Smooth scrolling effect for body */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Add subtle hover effect to project images */
+.project-card img {
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.project-card img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+/* Add subtle shadow to buttons */
+.view-btn,
+#contact-form button {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* Card hover shadow enhancement */
+.project-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Section headings style */
+section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+section h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #007bff;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Contact form focus effect */
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+  outline: none;
+}
+
+/* Footer link hover */
+footer a {
+  color: #fff;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #007bff;
+}
+
+/* Add a subtle gradient background to sections */
+#about, #projects, #contact {
+  background: linear-gradient(180deg, #ffffff, #f0f0f0);
+}
+
+/* Add slight border radius to sections */
+section {
+  border-radius: 10px;
+  margin-bottom: 2rem;
 }
